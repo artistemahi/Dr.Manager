@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* body{
+    width: 100vw;
+    height: 100vh;
+} */
+/*-------- header section*/
+.logoimg{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    padding: 10px;
+}
+.container_header{
+    display: flex;
+    justify-content: space-between; /*center horizontally*/
+    align-items: center; /*center vertically*/
+}
+.container_txt_tagline{
+    flex: 1;
+}
+.login{
+    font-weight: bold;
+    margin-right: 8px;
+    font-family: cursive;
+
+}
+.signUp{
+    background-color: rgba(168, 0, 0, 1);
+    padding:10px;
+    border-radius: 50px;
+    color: white;
+    font-family: cursive;
+    margin-right: 2%;
+}
+/*-------- navigation section*/
+
+.container_nav{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 8px;
+    text-decoration:underline;
+
+}
+/*-------- feature section*/
+
+.container_feature{
+    background-color: yellow;
+    padding: 12px;
+    display: flex;
+    justify-content: space-around;
+    color:black;
+    font-weight: bold;
+}
+/*----------main content section */
+.AboutUs_content{
+    background-color: gainsboro;
+    padding: 5%;
+    margin: 10px;
+    border:dashed ;
+}
+
+
+
+/*-------- footer section*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     background-color: blanchedalmond;
+     padding: 15px;
+}
+.container_footer{
+    flex:1;
+    padding:7px ;
+    /* margin-top: 100%; */
+}
+.aboutus{
+    flex:1;
+    margin-right: 50px;
+}
+.aboutus p.heading{
+    font-weight: bold;
+}
+.container_txt_tagline_footer{
+    flex:1;
+}
+.logoimgfooter{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+footer nav img{
+    width:10%;
+    height:10%;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.copyright{
+    background-color: brown;
+    padding: 4px;
+    color: whitesmoke;
+}
+div .copy{
+display: flex;
+justify-content: center;
+}
