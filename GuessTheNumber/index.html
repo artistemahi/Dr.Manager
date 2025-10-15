@@ -1,32 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dr.ChillZone</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="../styles.css">
 </head>
-<body style="background-color:#212121; color:#fff;">
 
-    <div id="wrapper">
-      <h1>Number guessing game</h1>
-    <p>Try and guess a random number between 1 and 100.</p>
-    <p>You have 10 attempts to guess the right number.</p>
-    </br>
-        <form class="form">
-            <label2 for="guessField" id="guess">Guess a number</label>
-            <input type="text" id="guessField" class="guessField">
-            <input type="submit" id="subt" value="Submit guess" class="guessSubmit">
-        </form>
+<body>
+    <header>
+        <div class="container_header">
+            <img class="logoimg" src="new img.png" alt="Dr. tasker logo">
+            <div class="contaier_logo_tagline">
+                <h1 class="logotext">Dr.ChillZone</h1>
+                <span class="tagline">Release all your stress.</span>
+            </div>
 
-        <div class="resultParas">
-            <p >Previous Guesses: <span class="guesses"></span></p>
-            <p >Guesses Remaining: <span class="lastResult">10</span></p>
-            <p class="lowOrHi"></p>
+            <button class="tryitfree"><a href="https://dr-manager-two.vercel.app/">Back to Dr.Manager</a></button>
+        </div>
+
+        <nav class="container_nav">
+            <ul class="nav">
+                <li><a href="index.html" style="text-decoration: underline;">Home</a></li>
+                <li><a href="#about-section" style="text-decoration: underline;">About Us</a></li>
+                <li><a href="underconstruction.html" style="text-decoration: underline;">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contentTxt">
+        <h2 class="Welcome">Welcome to Dr.ChillZone</h2>
+        <div class="aboutUs" id="about-section">
+            <h3>About Us</h3>
+            <h4 style="line-height: 1.2em;">Dr.ChillZone is your go-to platform for fun, simple games designed to
+                relieve stress and soothe the mind. Whether you're taking a break, calming down after a busy day, or
+                just need a mental reset, Dr.ChillZone helps you unwind with playful experiences made just for you.
+                As a part of Dr.Manager, which brings together everything from document management to fitness tracking,
+                Dr.ChillZone represents just one piece of a much larger vision — managing everything effortlessly.
+
+
+                Powered by Dr.Manager — <i class="drmanagerTagline" style="color: yellow"> "which manages
+                    everything"</i></h4>
         </div>
     </div>
+    <div class="container_wrapper">
+        <div id="wrapper">
+            <h1 class="num_guess_game">Number guessing game</h1>
+            <p>Try and guess a random number between 1 and 100.</p>
+            <p>You have 10 attempts to guess the right number.</p>
+            </br>
+            <form class="form">
+                <label2 for="guessField" id="guess">Guess a number</label>
+                    <input type="text" id="guessField" class="guessField">
+                    <input type="submit" id="subt" value="Submit guess" class="guessSubmit">
+            </form>
+
+            <div class="resultParas">
+                <p>Previous Guesses: <span class="guesses"></span></p>
+                <p>Guesses Remaining: <span class="lastResult">10</span></p>
+                <p class="lowOrHi"></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p> @2025 Dr.ChillZone. All rights reserved.</p>
+    </footer>
     <script src="index.js"></script>
 </body>
+
 </html>
