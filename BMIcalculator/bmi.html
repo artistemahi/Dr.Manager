@@ -2,28 +2,62 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="bmi.css" />
-  <title>Dr.Muscle</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Muscle</title>
+    <link rel="stylesheet" href="bmi.css">
 </head>
 
 <body>
-  <nav>
-    <h1>BMI Calculator</h1>
+    <header>
+        <div class="container_header">
+            <img class="logoimg" src="new img.png" alt="Dr. tasker logo">
+            <div class="contaier_logo_tagline">
+                <h1 class="logotext">Dr.Muscle</h1>
+                <p class="tagline">Take Control of Your Body.</p>
+            </div>
+
+            <button class="tryitfree"><a href="https://dr-manager-two.vercel.app/">Back to Dr.Manager</a></button>
+        </div>
+
+        <nav class="container_nav">
+            <ul class="nav">
+                <li><a href="index.html" style="text-decoration: underline;">Home</a></li>
+                <li><a href="#about-section" style="text-decoration: underline;">About Us</a></li>
+                <li><a href="underconstruction.html" style="text-decoration: underline;">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contentTxt">
+        <h2 class="Welcome">Welcome to Dr.Muscle</h2>
+        <div class="aboutUs" id="about-section">
+            <h3>About Us</h3>
+            <h4 style="line-height: 1.2em;">Dr.Muscle is a powerful fitness & wellness suite within the Dr.Manager ecosystem — your all-in-one
+                health & performance platform built to make wellness easier and more rewarding. Designed for strength,
+                balance, and growth, Dr.Muscle helps you train smarter, recover better, and stay motivated on your
+                journey.
+                As a part of Dr.Manager, which brings together everything from document management to fitness tracking,
+                Dr.Tasker represents just one piece of a much larger vision — managing everything effortlessly.
+
+
+                Powered by Dr.Manager — <i class="drmanagerTagline" style="color: yellow"> "which manages
+                    everything"</i></h4>
+        </div>
+    </div>
+ <nav>
+    <h1 class="bmi">BMI Calculator</h1>
   </nav>
-  <div class="about">
+  <div class="about_muscle">
     <p><b>What is BMI?</b></p>
     <p><b>BMI, or Body Mass Index,</b> is a measurement of body fat based on a person's height and weight. It's a quick and
       inexpensive screening tool that helps categorize adults into weight categories: <b>underweight</b>,<b>normal weight</b> ,
     <b>overweight</b>, and obese. The <b>formula is BMI = weight (kg) / height (m)²</b> for metric units</p>
   </div>
-  <div class="container">
+  <div class="container_muscle">
     <form>
-      <p><label>Height in CM: </label><input type="text" id="height" /></p>
-      <p><label>Weight in KG: </label><input type="text" id="weight" /></p>
-      <button>Calculate</button>
+      <p><label for="height">Height in CM: </label><input type="text" id="height" /></p>
+      <p><label for="weight">Weight in KG: </label><input type="text" id="weight" /></p>
+      <button class="Calculatebtn">Calculate</button>
       <div id="results"></div>
       <div id="weight-guide">
         <h3>BMI Weight Guide</h3>
@@ -33,7 +67,11 @@
       </div>
     </form>
   </div>
+
+    <footer>
+        <p> @2025 Dr.Muscle. All rights reserved.</p>
+    </footer>
+    <script src="bmi.js"></script>
 </body>
-<script src="bmi.js"></script>
 
 </html>
